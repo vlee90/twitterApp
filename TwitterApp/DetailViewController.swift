@@ -78,6 +78,7 @@ class DetailViewController: UIViewController {
         self.retweetLabel.text = "Retweet #: \(self.retweet!)"
         self.tweetLabel.text = self.text
         self.screenNameLabel.text = self.screenName
+        
     }
     
     func setupTimelineProperties(timeline: TimelineViewController) {
