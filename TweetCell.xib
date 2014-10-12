@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TWEET_CELL" rowHeight="120" id="Nix-xf-6xA" customClass="TweetCell" customModule="TwitterApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nix-xf-6xA" id="lXE-Vp-1oL">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q8L-u2-f2P">
+                        <rect key="frame" x="8" y="8" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="96i-IQ-YPl"/>
+                            <constraint firstAttribute="height" constant="100" id="Mvv-Ng-nN9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TweetTextLabel" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maj-TF-72J">
+                        <rect key="frame" x="118" y="36" width="274" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="350" id="rpK-eI-38t"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rpK-eI-38t"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserNameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLC-hr-H1n">
+                        <rect key="frame" x="118" y="8" width="274" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Oyd-ZO-pKW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Maj-TF-72J" secondAttribute="bottom" id="2j8-fp-eu1"/>
+                    <constraint firstItem="QLC-hr-H1n" firstAttribute="leading" secondItem="q8L-u2-f2P" secondAttribute="trailing" constant="10" id="4Nb-Ys-Xs3"/>
+                    <constraint firstItem="Maj-TF-72J" firstAttribute="top" secondItem="lXE-Vp-1oL" secondAttribute="topMargin" id="62G-A2-j90"/>
+                    <constraint firstItem="q8L-u2-f2P" firstAttribute="top" secondItem="QLC-hr-H1n" secondAttribute="top" id="AO6-Gi-osT"/>
+                    <constraint firstItem="q8L-u2-f2P" firstAttribute="top" secondItem="lXE-Vp-1oL" secondAttribute="topMargin" id="F9H-D3-juO"/>
+                    <constraint firstItem="Maj-TF-72J" firstAttribute="top" secondItem="QLC-hr-H1n" secondAttribute="bottom" constant="10" id="II0-Au-viA"/>
+                    <constraint firstItem="q8L-u2-f2P" firstAttribute="leading" secondItem="lXE-Vp-1oL" secondAttribute="leadingMargin" id="MAy-jD-Xbl"/>
+                    <constraint firstItem="Maj-TF-72J" firstAttribute="leading" secondItem="QLC-hr-H1n" secondAttribute="trailing" constant="10" id="S89-7L-wSe"/>
+                    <constraint firstItem="Maj-TF-72J" firstAttribute="leading" secondItem="QLC-hr-H1n" secondAttribute="trailing" constant="10" id="VDI-F1-eyL"/>
+                    <constraint firstItem="Maj-TF-72J" firstAttribute="leading" secondItem="q8L-u2-f2P" secondAttribute="trailing" constant="10" id="Yzn-md-Ihf"/>
+                    <constraint firstItem="QLC-hr-H1n" firstAttribute="leading" secondItem="lXE-Vp-1oL" secondAttribute="leadingMargin" id="Zzi-gy-ndL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="q8L-u2-f2P" secondAttribute="bottom" id="mfz-f0-7h2"/>
+                    <constraint firstItem="q8L-u2-f2P" firstAttribute="top" secondItem="lXE-Vp-1oL" secondAttribute="topMargin" id="nV2-89-nKc"/>
+                    <constraint firstItem="Maj-TF-72J" firstAttribute="trailing" secondItem="lXE-Vp-1oL" secondAttribute="trailingMargin" id="pTQ-HR-AbX"/>
+                    <constraint firstItem="QLC-hr-H1n" firstAttribute="top" secondItem="q8L-u2-f2P" secondAttribute="bottom" constant="10" id="tBN-9Z-2C0"/>
+                    <constraint firstItem="Maj-TF-72J" firstAttribute="leading" secondItem="QLC-hr-H1n" secondAttribute="trailing" constant="8" symbolic="YES" id="tTC-RJ-oeB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QLC-hr-H1n" secondAttribute="trailing" id="tif-eK-SrY"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="mfz-f0-7h2"/>
+                        <exclude reference="nV2-89-nKc"/>
+                        <exclude reference="Zzi-gy-ndL"/>
+                        <exclude reference="tBN-9Z-2C0"/>
+                        <exclude reference="62G-A2-j90"/>
+                        <exclude reference="S89-7L-wSe"/>
+                        <exclude reference="VDI-F1-eyL"/>
+                        <exclude reference="tTC-RJ-oeB"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="profileImageView" destination="q8L-u2-f2P" id="aLz-Cx-ecf"/>
+                <outlet property="tweetTextLabel" destination="Maj-TF-72J" id="39G-ER-GCF"/>
+                <outlet property="userNameLabel" destination="QLC-hr-H1n" id="fCY-E5-Nxa"/>
+            </connections>
+            <point key="canvasLocation" x="415" y="133"/>
+        </tableViewCell>
+    </objects>
+</document>
